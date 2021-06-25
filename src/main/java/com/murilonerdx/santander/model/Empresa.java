@@ -13,10 +13,15 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @Builder
 @Entity
-public class JornadaTrabalho {
+public class Empresa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String descricao;
-
+    private String cnpj;
+    private String endereco;
+    private String bairro;
+    private String cidade;
+    private String estado;
+    private String telefone;
 }

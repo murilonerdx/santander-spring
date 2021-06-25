@@ -13,10 +13,10 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @Builder
 @Entity
-public class JornadaTrabalho {
+public class Ocorrencia {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String nome;
     private String descricao;
-
 }

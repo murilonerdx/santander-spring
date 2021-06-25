@@ -1,5 +1,6 @@
 package com.murilonerdx.santander.model;
 
+
 import lombok.*;
 
 import javax.persistence.Entity;
@@ -13,10 +14,9 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @Builder
 @Entity
-public class JornadaTrabalho {
+public class NivelAcesso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String descricao;
-
 }

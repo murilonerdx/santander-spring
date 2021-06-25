@@ -13,10 +13,9 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @Builder
 @Entity
-public class JornadaTrabalho {
+public class CategoriaUsuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String descricao;
-
 }

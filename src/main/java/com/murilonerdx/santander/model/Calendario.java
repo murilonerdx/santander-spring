@@ -2,10 +2,8 @@ package com.murilonerdx.santander.model;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -13,10 +11,12 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @Builder
 @Entity
-public class JornadaTrabalho {
+public class Calendario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @OneToOne
+    private TipoData tipoData;
     private String descricao;
-
+    private LocalDateTime dataEspecial;
 }
