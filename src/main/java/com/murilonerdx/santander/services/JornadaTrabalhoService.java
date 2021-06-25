@@ -30,6 +30,13 @@ public class JornadaTrabalhoService {
         } catch (Exception e) {
             throw new Exception("Jornada com id " + id + " não encontrado");
         }
+    }
 
+    public JornadaTrabalho update(JornadaTrabalho jornadaTrabalho){
+        return repository.save(jornadaTrabalho);
+    }
+
+    public void delete(Long id){
+        repository.deleteById(id);
     }
 }

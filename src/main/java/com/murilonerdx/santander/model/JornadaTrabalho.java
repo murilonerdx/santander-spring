@@ -18,5 +18,4 @@ public class JornadaTrabalho {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String descricao;
-
 }
